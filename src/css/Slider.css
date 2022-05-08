@@ -1,0 +1,17 @@
+.heroSlider {
+  width: 80vw;
+  margin: auto;
+  /* background-color: red; */
+  padding: 1rem;
+  margin-top: 3rem;
+  /* margin-bottom: 3rem; */
+}
+
+img {
+  width: 80px;
+  height: auto;
+}
+
+.slick-prev {
+  color: black;
+}

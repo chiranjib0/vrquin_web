@@ -1,0 +1,286 @@
+/* body {
+  overflow-y: hidden;
+} */
+
+.heroSection {
+  width: 100vw;
+  height: 92vh;
+  margin: auto;
+  /* background-color: black; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.heroHeader {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+}
+
+.heroPara {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+}
+
+.back-video {
+  position: absolute;
+  z-index: -10;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  top: 50%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+}
+
+/* @media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+} */
+
+.buttons {
+  margin-left: 5rem;
+}
+.button {
+  /* width: 160px;
+  height: 56px; */
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.2rem;
+}
+
+.heroButtonLeft {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.heroButtonRight {
+  margin-left: 1rem;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: #52c85a;
+  border: none;
+  color: black;
+}
+
+.heroArticle {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  margin-top: 3rem;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.articleTextPart {
+  width: 45%;
+}
+
+.articleImgPart {
+  width: 45%;
+}
+
+.articleHeader h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.articlePara p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.articleImgPart img {
+  width: 100%;
+  height: auto;
+}
+
+.homeCardSection {
+  width: 100%;
+  height: auto;
+  /* background-color: bisque; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeCardRow1{
+  width: 100%;
+  height:50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.homeCardRow2{
+  width: 100%;
+  height:50%;
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeCardRowEl{
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.myStudio{
+  width: 70vw;
+  height:auto;
+  background-color: #ebf0f2;
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+}
+
+.myStudioTextPart{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3.5rem;
+  
+}
+
+.myStudioImgPart{
+  width: 50%;
+  /* background-color: bisque; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myStudioImgPart img{
+  width: 100%;
+  height: auto;
+  
+  object-fit: cover;
+}
+
+.myStudioHeadPara{
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.myStudioTextPart h2{
+  font-size: 2.5rem;
+  padding: .5rem 0;
+}
+
+.myStudioDesc{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.myStudioTextPart button{
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1.2rem 2rem;
+  border: none;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+
+}
+
+.myStudioTextPart button:hover{
+  background-color: #52c85a;
+  color: black;
+}
+
+
+
+.featureSection{
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  /* background-color: #52c85a; */
+  display: flex;
+  padding: 0 6rem;
+}
+
+.featureSectionContent{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.featureSectionContent h2{
+  font-size: 2.145rem;
+  padding-bottom: 1rem;
+}
+
+.featureSectionContent p{
+  font-size: 1.145rem;
+  line-height: 1.6;
+  padding-bottom: 1rem;
+}
+
+.featureSectionContent button{
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1.2rem 2rem;
+  border: none;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+
+}
+
+.featureSectionImage{
+  width: 50%;
+}
+
+.featureSectionImage img{
+  width: 100%;
+  height: auto
+}
+
+

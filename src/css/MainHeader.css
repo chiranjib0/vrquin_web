@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Nav bar styling start  */
+
+.navBar {
+  width: 100%;
+  height: 8vh;
+  background-color: rgba(0, 0, 0, 0.644);
+  display: flex;
+  position: fixed;
+  z-index: 100;
+}
+
+.navLeft {
+  width: 40%;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+
+.navCenter {
+  width: 20%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navRight {
+  width: 40%;
+  /* background-color: violet; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+.navBar a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navBar a img {
+  width: 170px;
+  height: auto;
+}
+
+.menuButton {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: none;
+}
+
+.menuButton span {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  margin: 3px;
+}
+
+.navBar .navLeft #hidden {
+  display: flex;
+}
+
+/* media queries */
+
+@media (max-width: 1250px) {
+  .navBar a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menuButton {
+    display: flex;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .navBar .navLeft #hidden {
+    position: absolute;
+    left: 0;
+    top: 8vh;
+    height: 92vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+  }
+
+  .navBar .navLeft #hidden a {
+    margin: 10px;
+    font-size: 2rem;
+  }
+}
